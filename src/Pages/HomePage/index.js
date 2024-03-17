@@ -7,7 +7,7 @@ import photo from "../../assets/banner.png"
 export default function HomePage(){
     // what`sApp
     const handleWhatsAppClick = () => {
-        const phoneNumber = '01023671214'; 
+        const phoneNumber = '+201023671214'; 
         window.open(`https://wa.me/${phoneNumber}`, '_blank');
       };
     //   Facebook
