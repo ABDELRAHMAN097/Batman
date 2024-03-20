@@ -30,10 +30,12 @@ export default function About() {
                 
                 <div className='Interests'>
                 <p>Aside from coding, there are some other activities I like to do!</p>
+                  <div className='hobbies'>
                   <span>Writing Tech Blogs</span>
                   <span> Playing Games</span>
                   <span>Travelling</span>
                   <span>fishing</span>
+                  </div>
                 </div>
             </div>
 
