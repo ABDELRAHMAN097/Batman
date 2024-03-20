@@ -46,6 +46,9 @@ span {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    @media screen and (max-width: 767px){
+      align-items: center;
+    }
 }
 .infos {
   display: flex;
