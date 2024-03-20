@@ -35,7 +35,7 @@ export default function HomePage(){
                     </div>
                 </div>
 
-                <Link className = 'cv' to={"https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link"}>CV</Link>
+                <Link className = 'cv' to={"https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link"}>Cv</Link>
                 
                 </div>
             </div>
