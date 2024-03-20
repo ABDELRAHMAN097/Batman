@@ -33,6 +33,15 @@ export default function HomePage(){
                     <div className='border-icon' onClick={handelface}>
                         <FontAwesomeIcon className='icon' icon={faFacebook}/>
                     </div>
+                    <div className='border-icon' onClick={handelface}>
+                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
+                    </div>
+                    <div className='border-icon' onClick={handelface}>
+                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
+                    </div>
+                    <div className='border-icon' onClick={handelface}>
+                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
+                    </div>
                 </div>
 
                 <Link className = 'cv' to={"https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link"}>Cv</Link>
