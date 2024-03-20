@@ -34,7 +34,9 @@ export default function HomePage(){
                         <FontAwesomeIcon className='icon' icon={faFacebook}/>
                     </div>
                 </div>
-                <button>Download CV</button>
+
+                <Link className = 'cv' to={"https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link"}>CV</Link>
+                
                 </div>
             </div>
             <div className='intro-img animated-img'>
