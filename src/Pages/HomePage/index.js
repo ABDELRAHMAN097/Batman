@@ -14,11 +14,15 @@ export default function HomePage(){
     const handelface = () => {
         window.open(`https://www.facebook.com/profile.php?id=100010178802930&mibextid=ZbWKwL`, '_blank');
     }
+    const handelCv = () => {
+        window.open(`https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link`, '_blank');
+
+    }
     return(
         <div className="hero col-12">
             <div className='intro text-container  animated-text'>
                 <div className='ml'>
-                <h1 className='animate__animated animate__pulse animate__infinite	infinite animate__slower 1s'>I Am <span>Abdelrahman</span> Magdy</h1>
+                <h1>I Am <span>Abdelrahman</span> Magdy</h1>
                 <p>Front-End <span>Developer</span></p>
                 <div className='social'>
                     <div className='border-icon'>
@@ -33,22 +37,11 @@ export default function HomePage(){
                     <div className='border-icon' onClick={handelface}>
                         <FontAwesomeIcon className='icon' icon={faFacebook}/>
                     </div>
-                    <div className='border-icon' onClick={handelface}>
-                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
-                    </div>
-                    <div className='border-icon' onClick={handelface}>
-                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
-                    </div>
-                    <div className='border-icon' onClick={handelface}>
-                        <FontAwesomeIcon className='icon' icon={faFacebook}/>
-                    </div>
                 </div>
-
-                <Link className = 'cv' to={"https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link"}>Cv</Link>
-                
+                 <button className='cv' onClick={handelCv}>Download CV</button>
                 </div>
             </div>
-            <div className='intro-img animated-img'>
+            <div className='intro-img animated-img ' >
                 <img className='photo col-12 ' src={photo} alt=''/>
             </div>
         </div>
