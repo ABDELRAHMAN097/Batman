@@ -25,6 +25,10 @@ export default function Nav() {
           <Link to={"About"}>About Me</Link>
         </li>
 
+        <li>
+          <Link to={"Contact"}>Contact</Link>
+        </li>
+
       </ul>
       <div onClick={() => setShowNav(!showNav)} className="nav__toggler">
         <FontAwesomeIcon icon={faBars} />

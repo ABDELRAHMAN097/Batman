@@ -108,29 +108,3 @@ position: relative;
 }
 
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animated-text {
-  animation: fadeIn 2s ease forwards;
-}
-@keyframes moveRightToLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.animated-img {
-  animation: moveRightToLeft 1s ease forwards;
-}

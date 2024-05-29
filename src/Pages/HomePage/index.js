@@ -19,7 +19,8 @@ export default function HomePage(){
 
     }
     return(
-        <div className="hero col-12">
+        <div className="col-12">
+            <div className='hero'>
             <div className='intro text-container  animated-text'>
                 <div className='ml'>
                 <h1>I Am <span>Abdelrahman</span> Magdy</h1>
@@ -43,6 +44,11 @@ export default function HomePage(){
             </div>
             <div className='intro-img animated-img ' >
                 <img className='photo col-12 ' src={photo} alt=''/>
+            </div>
+            </div>
+            <div className='sercices'>
+                <h2 className='py-5 text-center'>sercices</h2>
+                <div></div>
             </div>
         </div>
     )
