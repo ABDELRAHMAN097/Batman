@@ -18,7 +18,7 @@ export default function About() {
   return (
 <div>
         <div className='about col-12'>
-            <div className='about-details col-8 '>
+            <div className='about-details col-8 animated-text'>
 
               <div className='infos'>
               <h2>Know Who <span>I'M</span></h2>
@@ -39,7 +39,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className='img col-4 '>
+            <div className='img col-4 animated-img'>
               <img src={svg} alt='svg'/>
             </div>
         </div>

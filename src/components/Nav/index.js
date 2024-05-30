@@ -17,15 +17,15 @@ export default function Nav() {
       </div>
 
       <ul className={showNav ? "show-nav nav__active " : "nav-links"}>
-        <li>
+        <li className="hover-grow">
           <Link to={"/"}>Home</Link>
         </li>
         
-        <li>
+        <li className="hover-grow">
           <Link to={"About"}>About Me</Link>
         </li>
 
-        <li>
+        <li className="hover-grow">
           <Link to={"Contact"}>Contact</Link>
         </li>
 

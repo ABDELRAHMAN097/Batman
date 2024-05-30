@@ -8,6 +8,7 @@
 a{
     color: white;
     text-decoration: none;
+    transition: all 0.5s ease;
 
 }
 
@@ -15,6 +16,12 @@ ul{
     list-style: none;
     display: flex;
     gap: 2rem;
+}
+li{
+    transition: all 0.5s ease;
+    :hover{
+        color: var(--blueColor);
+    }
 }
 
 .mylogo{
@@ -65,6 +72,9 @@ ul{
 }
   
   
+
+   
+    
 
 
 

@@ -75,15 +75,15 @@ h1 , p{
     justify-content: center;
     align-items: center;
   }
-  .cv{
-    background: linear-gradient(to right , #8d60d5 ,  #5484cd , #1ca7c8);
-    border-radius: 20px;
-    outline: none;
-    border: #8d60d5;
-    padding: 10px;
-    color: #fff;
-    text-align: start;
-  }
+}
+.btn{
+  background: linear-gradient(to right , #8d60d5 ,  #5484cd , #1ca7c8);
+  border-radius: 20px;
+  outline: none;
+  border: #8d60d5;
+  padding: 10px;
+  color: #fff;
+  text-align: start;
 }
 .intro-img{   
 position: relative;
@@ -106,5 +106,7 @@ position: relative;
     width: 70%;
 } 
 }
-
+.item{
+  border: 1px dotted rgb(255, 255, 255);
+}
 
