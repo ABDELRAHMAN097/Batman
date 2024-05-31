@@ -8,6 +8,7 @@
   width: 100%;
   p{
     color: #bebebe;
+    padding: 0 20px;
   }
 }
 .contactUs {
@@ -59,7 +60,7 @@
   gap: 1rem;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 1px 10px rgb(43 87 133 / 46%)
   
 }
 .parent{
@@ -70,8 +71,8 @@
   gap: 1rem;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  width: 49%;
+  box-shadow: 2px 1px 10px rgb(43 87 133 / 46%);
+  width: 50%;
   @media screen and (max-width:767px){
     width: 100%;
   }
@@ -91,7 +92,7 @@
   justify-content: center;
   align-items: stretch;
   gap: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 1px 10px rgb(43 87 133 / 46%);
   @media screen and (max-width:767px){
     width: 100%;
   }
@@ -103,9 +104,7 @@
     width: 200px;
     font-size: 16px;
     width: 100%;
-    &:hover {
-      border: 0.2px solid var(--blueColor);
-    }
+    border: none;
     outline: none;
   }
   .sub {
@@ -126,6 +125,7 @@
     background-color: var(--blueColor) !important;
     border-radius: 5px;
     outline: none;
+    border: none;
     &:hover {
       border: none;
       color: white;

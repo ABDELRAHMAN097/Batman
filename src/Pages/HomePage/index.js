@@ -158,7 +158,7 @@ export default function HomePage() {
             </div>
           </div>
           <div class=" col-lg-4 col-md-6 col-sm-12 text-center">
-            <div className="border rounded m-2">
+            <div className="border rounded ">
               <img className="w-100" src={project03} alt="project03" />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
