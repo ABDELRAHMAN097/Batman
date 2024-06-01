@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown, faAnglesRight, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
@@ -56,7 +56,7 @@ export default function Index() {
           below or use the provided contact details to get in touch. I look
           forward to connecting with you!
         </p>
-        <div className="social">
+        <div className="social py-5">
         <div className="social fs-1 text-end">
               <div className="border-icon">
                 <FontAwesomeIcon className="icon" icon={faGithub} />
@@ -70,12 +70,12 @@ export default function Index() {
               <div className="border-icon" onClick={handelface}>
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
               </div>
-              <div className="text-center">
-                <img className="p-3 rounded img-fluid" src={photo} alt="photo2"/>
+              <div className="text-center p-3">
+                <img className="border rounded" src={photo} alt="photo2"/>
               </div>
               </div>
-              <div className="text-start vertical-text ">
-              <h3 className="color-changing-text">Scrole Downe</h3>
+              <div className="text-start vertical-text d-flex align-items-center">   
+              <h3 className="color-changing-text">Scrole Downe <FontAwesomeIcon className="icon" icon={faAnglesDown} /> </h3>
             </div>
             </div>
           
