@@ -2,12 +2,7 @@ import React from "react";
 import "animate.css";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGithub,
-  faTwitter,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import photo from "../../assets/banner.png";
 import project1 from "../../assets/project01.png";
 import project02 from "../../assets/project02.png";
@@ -44,12 +39,15 @@ export default function HomePage() {
   const projectThre = () => {
     window.open("https://alhilal-hospital00.netlify.app/", "_blank");
   };
+
+
   return (
     <div className="col-12  w-100 px-5">
       <div className="hero">
-        <div className="intro text-container  animated-text">
+        
+        <div className="intro text-container animate__animated animate__fadeInLeft">
           <div className="ml">
-            <h1>
+            <h1 className="animate__animated animate__fadeInDown animate__delay-1s">
               I Am <span>Abdelrahman</span> Magdy
             </h1>
             <p>
@@ -74,8 +72,8 @@ export default function HomePage() {
             </button>
           </div>
         </div>
-        <div className="intro-img animated-img ">
-          <img className="photo col-12 " src={photo} alt="" />
+        <div className="intro-img animate__animated  animate__fadeInRight">
+          <img className="photo col-12" src={photo} alt="" />
         </div>
       </div>
 
@@ -87,7 +85,7 @@ export default function HomePage() {
               <span className="fs-1">
                 <LuSquareDashedBottomCode />
               </span>
-              <h3>Web Development</h3>
+              <h3 className="pt-3">Web Development</h3>
               <p className="text-white-50 py-2">
                 I will provide web development service. If you need please
                 contact with me.
@@ -99,7 +97,7 @@ export default function HomePage() {
             <span className="fs-1">
               <MdPhonelink />
             </span>
-            <h3>Full Responsive</h3>
+            <h3 className="pt-3">Full Responsive</h3>
             <p className="text-white-50 py-2">
               I will provide full responsive website with mobile phone, tablet,
               desktop, extra large device.
@@ -111,7 +109,7 @@ export default function HomePage() {
             <span className="fs-1">
               <GoCodescan />
             </span>
-            <h3>Pixel Perfect Design</h3>
+            <h3 className="pt-3">Pixel Perfect Design</h3>
             <p className="text-white-50 py-2">100% Pixel perfect design is my goal.</p>
           </div>
           </div>
@@ -121,7 +119,7 @@ export default function HomePage() {
             <span className="fs-1">
               <MdOutlineDesignServices />
             </span>
-            <h3>Web Design</h3>
+            <h3 className="pt-3">Web Design</h3>
 
             <p className="text-white-50 py-2">
               I can do any kind of website design like E-commerce, Portfolio,
@@ -134,8 +132,8 @@ export default function HomePage() {
 
       <div className="Projects">
         <h2 className="py-5 text-center">Projects</h2>
-        <div class="row px-3 w-100 align-items-baseline">
-          <div class=" col-lg-4 col-md-6 col-sm-12 ">
+        <div className="row px-3 w-100 align-items-baseline">
+          <div className=" col-lg-4 col-md-6 col-sm-12 ">
             <div className="border rounded m-2">
               <img className="w-100" src={project1} alt="projectPhoto" />
               <div className="p-2 text-start">
@@ -146,7 +144,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-6 col-sm-12 text-center">
+          <div className=" col-lg-4 col-md-6 col-sm-12 text-center">
             <div className="border rounded m-2">
               <img className="w-100" src={project02} alt="project02" />
               <div className="p-2 text-start">
@@ -157,7 +155,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div class=" col-lg-4 col-md-6 col-sm-12 text-center">
+          <div className=" col-lg-4 col-md-6 col-sm-12 text-center">
             <div className="border rounded ">
               <img className="w-100" src={project03} alt="project03" />
               <div className="p-2 text-start">

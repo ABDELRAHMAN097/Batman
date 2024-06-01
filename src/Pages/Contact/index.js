@@ -4,9 +4,23 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
 
 export default function Index() {
+   // what`sApp
+   const handleWhatsAppClick = () => {
+    const phoneNumber = "+201023671214";
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+  //   Facebook
+  const handelface = () => {
+    window.open(
+      `https://www.facebook.com/profile.php?id=61554441730`,
+      "_blank"
+    );
+  };
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,7 +44,7 @@ export default function Index() {
 
   return (
     <div className="contact">
-      <div className="intro-services text-center">
+      <div className="intro-services py-5 text-center animate__animated animate__fadeInDown">
         <h1 className="py-3">CONTACT</h1>
         <p>
           Thank you for visiting my portfolio! If you have any questions,
@@ -42,9 +56,32 @@ export default function Index() {
           below or use the provided contact details to get in touch. I look
           forward to connecting with you!
         </p>
+        <div className="social">
+        <div className="social fs-1 text-end">
+              <div className="border-icon">
+                <FontAwesomeIcon className="icon" icon={faGithub} />
+              </div>
+              <div className="border-icon" onClick={handleWhatsAppClick}>
+                <FontAwesomeIcon className="icon" icon={faWhatsapp} />
+              </div>
+              <div className="border-icon">
+                <FontAwesomeIcon className="icon" icon={faTwitter} />
+              </div>
+              <div className="border-icon" onClick={handelface}>
+                <FontAwesomeIcon className="icon" icon={faFacebook} />
+              </div>
+              <div className="text-center">
+                <img className="p-3 rounded img-fluid" src={photo} alt="photo2"/>
+              </div>
+              </div>
+              <div className="text-start vertical-text ">
+              <h3 className="color-changing-text">Scrole Downe</h3>
+            </div>
+            </div>
+          
       </div>
-      <div className="contactUs">
-        <div className="ourAddress">
+      <div className="contactUs py-5">
+        <div className="ourAddress animate__animated animate__fadeInLeft">
           <div className="parent1">
             <div className="icon">
               <FontAwesomeIcon icon={faLocationDot} />
@@ -74,7 +111,7 @@ export default function Index() {
 
         {/* onSubmit={handleSubmit} */}
 
-        <form ref={form} onSubmit={sendEmail} className="formContact">
+        <form ref={form} onSubmit={sendEmail} className="formContact animate__animated  animate__fadeInRight">
           {/* name && email */}
           <div className="name-email">
             <div className="name">
@@ -111,6 +148,7 @@ export default function Index() {
         </form>
       </div>
       <iframe
+        className="animate__animated animate__flash"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17889.45674668869!2d31.248137862139618!3d30.075554860394153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f8745b98161%3A0x547e5cdd526c8b88!2sAl%20Sharabeya%2C%20Mahmashah%2C%20El%20Sharabiya%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1717011611728!5m2!1sen!2seg"
         width="100%"
         height="400"

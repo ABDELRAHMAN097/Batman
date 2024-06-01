@@ -23,6 +23,11 @@
     flex-direction: column;
   }
 }
+.vertical-text {
+  writing-mode: vertical-rl;
+  
+  padding: 10px;
+}
 .ourAddress {
   width: 48%;
   padding: 20px;
