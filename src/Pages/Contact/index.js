@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faAnglesDown, faAnglesRight, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown ,  faLocationDot , faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
