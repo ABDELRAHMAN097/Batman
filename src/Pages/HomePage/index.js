@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 import "animate.css";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -50,9 +51,13 @@ export default function HomePage() {
             <h1 className="animate__animated animate__fadeInDown animate__delay-1s">
               I Am <span>Abdelrahman</span> Magdy
             </h1>
-            <p>
-              Front-End <span>Developer</span>
-            </p>
+            <ReactTyped
+            className="mov"
+              strings={["Front-End <span>Developer</span>"]}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            />
             <div className="social">
               <div className="border-icon">
                 <FontAwesomeIcon className="icon" icon={faGithub} />
