@@ -69,7 +69,7 @@ export default function HomePage() {
 
 
   return (
-    <div className="col-12  w-100 px-5">
+    <div className="col-12  w-100">
       <div className="hero">
         
         <div className="intro text-container animate__animated animate__fadeInLeft">
