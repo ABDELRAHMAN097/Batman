@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './index.scss'
+import { WOW } from "wowjs";
 import svg from '../../assets/svg i.png'
 import html from '../../assets/html.png'
 import css from '../../assets/css.png'
@@ -15,10 +16,14 @@ import redux from '../../assets/redux.png'
 import vscode from '../../assets/vscode.png'
 
 export default function About() {
+  useEffect(() => {
+    const wow = new WOW({ live: false });
+    wow.init();
+  }, []);
   return (
 <div>
         <div className='about col-12'>
-            <div className='about-details col-8 animate__animated animate__fadeInLeft'>
+            <div className='about-details col-8 wow animate__animated animate__fadeInLeft'>
 
               <div className='infos'>
               <h2>Know Who <span>I'M</span></h2>
@@ -40,11 +45,11 @@ export default function About() {
             </div>
 
             <div className='img col-4 animate__animated  animate__fadeInRight'>
-              <img className='animate__animated animate__pulse animate__delay-1s animate__slower	4s animate__infinite	infinite' src={svg} alt='svg'/>
+              <img className='wow animate__animated animate__pulse animate__delay-1s animate__slower	4s animate__infinite	infinite' src={svg} alt='svg'/>
             </div>
         </div>
         
-        <div className='skills col-12 animate__animated animate__fadeInDown animate__delay-1s'>
+        <div className='skills col-12 wow animate__animated animate__fadeInDown animate__delay-1s'>
           <h2>Professional skills</h2>
           <div className='items'>
             <div className='item'>
@@ -79,7 +84,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className='skills col-12 mb-4 animate__animated animate__fadeInUp animate__delay-1s'>
+        <div className='skills col-12 mb-4 wow animate__animated animate__fadeInUp animate__delay-1s'>
           <h2>Tools I Use</h2>
           <div className='items'>
             <div className='item'>

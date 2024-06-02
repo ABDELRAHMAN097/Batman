@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.scss";
+import { WOW } from "wowjs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faAnglesDown ,  faLocationDot , faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +10,10 @@ import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
 
 export default function Index() {
+  useEffect(() => {
+    const wow = new WOW({ live: false });
+    wow.init();
+  }, []);
    // what`sApp
    const handleWhatsAppClick = () => {
     const phoneNumber = "+201023671214";
@@ -45,8 +50,8 @@ export default function Index() {
   return (
     <div className="contact">
       <div className="intro-services py-5 text-center">
-        <h1 className="py-3 animate__animated animate__fadeInUp">CONTACT</h1>
-        <p className="animate__animated animate__fadeInDown">
+        <h1 className="py-3 wow animate__animated animate__fadeInUp">CONTACT</h1>
+        <p className="wow animate__animated animate__fadeInDown">
           Thank you for visiting my portfolio! If you have any questions,
           project proposals, or just want to say hello, feel free to reach out
           to me. I am always open to discussing new projects, creative ideas, or
@@ -57,7 +62,7 @@ export default function Index() {
           forward to connecting with you!
         </p>
         <div className="social py-5">
-        <div className="social fs-1 text-end animate__animated animate__fadeInUp">
+        <div className="social fs-1 text-end wow animate__animated animate__fadeInUp">
               <div className="border-icon">
                 <FontAwesomeIcon className="icon" icon={faGithub} />
               </div>
@@ -71,17 +76,17 @@ export default function Index() {
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
               </div>
               <div className="text-center p-3">
-                <img className="border rounded" src={photo} alt="photo2"/>
+                <img className="border rounded responsive-img" src={photo} alt="photo2"/>
               </div>
               </div>
-              <div className="text-start vertical-text d-flex align-items-center">   
-              <h3 className="color-changing-textanimate__animated animate__fadeInDown">Scrole Downe <FontAwesomeIcon className="icon" icon={faAnglesDown} /> </h3>
+              <div className="text-start vertical-text d-flex align-items-center wow animate__animated animate__fadeInUp animate__delay-1s">   
+              <h3 className="color-changing-text">Scrole Downe <FontAwesomeIcon className="icon" icon={faAnglesDown} /> </h3>
             </div>
             </div>
           
       </div>
       <div className="contactUs py-5">
-        <div className="ourAddress ">
+        <div className="ourAddress wow animate__animated animate__fadeInLeft">
           <div className="parent1">
             <div className="icon">
               <FontAwesomeIcon icon={faLocationDot} />
@@ -111,7 +116,7 @@ export default function Index() {
 
         {/* onSubmit={handleSubmit} */}
 
-        <form ref={form} onSubmit={sendEmail} className="formContact ">
+        <form ref={form} onSubmit={sendEmail} className="formContact wow animate__animated animate__fadeInRight">
           {/* name && email */}
           <div className="name-email">
             <div className="name">
@@ -148,6 +153,7 @@ export default function Index() {
         </form>
       </div>
       <iframe
+      className="wow animate__animated animate__fadeInUp"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17889.45674668869!2d31.248137862139618!3d30.075554860394153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f8745b98161%3A0x547e5cdd526c8b88!2sAl%20Sharabeya%2C%20Mahmashah%2C%20El%20Sharabiya%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1717011611728!5m2!1sen!2seg"
         width="100%"
         height="400"

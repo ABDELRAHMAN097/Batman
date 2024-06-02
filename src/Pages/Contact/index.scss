@@ -138,3 +138,32 @@
     }
   }
 }
+
+
+.responsive-img {
+  border-radius: 0.25rem; 
+}
+
+@media (max-width: 1200px) {
+  .responsive-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .responsive-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    width: 100%;
+  }
+}

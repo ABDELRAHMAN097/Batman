@@ -87,6 +87,31 @@ body {
   }
 }
 
+.underline-animation {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blueColor);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 .color-changing-text {
   animation: colorChange 5s infinite;
 }
@@ -95,7 +120,7 @@ body {
   0% { color: red; }
   20% { color: orange; }
   40% { color: yellow; }
-  60% { color: green; }
+  60% { color: red; }
   80% { color: blue; }
   100% { color: purple; }
 }
