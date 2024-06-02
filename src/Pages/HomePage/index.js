@@ -4,7 +4,7 @@ import { WOW } from "wowjs";
 import "animate.css";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook , faGithub , faLinkedin, faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import photo from "../../assets/banner.png";
 import project1 from "../../assets/project01.png";
 import project02 from "../../assets/project02.png";
@@ -26,7 +26,28 @@ export default function HomePage() {
   //   Facebook
   const handelface = () => {
     window.open(
-      `https://www.facebook.com/profile.php?id=100010178802930&mibextid=ZbWKwL`,
+      `https://www.facebook.com/profile.php?id=61554441730373`,
+      "_blank"
+    );
+  };
+  //   Twitter
+  const handelTwitter = () => {
+    window.open(
+      `https://x.com/bodymagdy097`,
+      "_blank"
+    );
+  };
+  //   linkedin
+  const handellinkedin = () => {
+    window.open(
+      `https://www.linkedin.com/in/abdelrahman-magdy-4944a3242/`,
+      "_blank"
+    );
+  };
+   //   github
+   const handelgithub = () => {
+    window.open(
+      `https://github.com/ABDELRAHMAN097`,
       "_blank"
     );
   };
@@ -65,13 +86,16 @@ export default function HomePage() {
             />
             <div className="social">
               <div className="border-icon">
-                <FontAwesomeIcon className="icon" icon={faGithub} />
+                <FontAwesomeIcon className="icon" onClick={handelgithub} icon={faGithub} />
               </div>
               <div className="border-icon" onClick={handleWhatsAppClick}>
                 <FontAwesomeIcon className="icon" icon={faWhatsapp} />
               </div>
               <div className="border-icon">
-                <FontAwesomeIcon className="icon" icon={faTwitter} />
+                <FontAwesomeIcon className="icon" onClick={handelTwitter} icon={faTwitter} />
+              </div>
+              <div className="border-icon">
+                <FontAwesomeIcon className="icon" onClick={handellinkedin} icon={faLinkedin} />
               </div>
               <div className="border-icon" onClick={handelface}>
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
@@ -91,7 +115,7 @@ export default function HomePage() {
         <h2 className="py-5 text-center">sercices</h2>
         <div className="row w-100  px-3 align-items-baseline">
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
-            <div className="border rounded m-2 p-2">
+            <div className="shadow m-2 p-2">
               <span className="fs-1">
                 <LuSquareDashedBottomCode />
               </span>
@@ -103,7 +127,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInUp animate__delay-1s">
-          <div className="border rounded m-2 p-2">
+          <div className="shadow m-2 p-2">
             <span className="fs-1">
               <MdPhonelink />
             </span>
@@ -115,7 +139,7 @@ export default function HomePage() {
           </div>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInRight animate__delay-1s">
-          <div className="border rounded m-2 p-2">
+          <div className="shadow m-2 p-2">
             <span className="fs-1">
               <GoCodescan />
             </span>
@@ -124,7 +148,7 @@ export default function HomePage() {
           </div>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInRight animate__delay-1s">
-          <div className="border rounded m-2 p-2">
+          <div className="shadow m-2 p-2">
 
             <span className="fs-1">
               <MdOutlineDesignServices />
@@ -144,7 +168,7 @@ export default function HomePage() {
         <h2 className="py-5 text-center">Projects</h2>
         <div className="row px-3 w-100 align-items-baseline">
           <div className=" col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
-            <div className="border rounded m-2">
+            <div className="shadow m-2 p-2">
               <img className="w-100" src={project1} alt="projectPhoto" />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
@@ -155,7 +179,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className=" col-lg-4 col-md-6 col-sm-12 text-center wow animate__animated animate__fadeInUp animate__delay-1s">
-            <div className="border rounded m-2">
+            <div className="shadow m-2 p-2">
               <img className="w-100" src={project02} alt="project02" />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
@@ -165,8 +189,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12 text-center">
-            <div className="border rounded wow animate__animated animate__fadeInDown animate__delay-1s">
+          <div className=" col-lg-4 col-md-6 col-sm-12 text-center  wow animate__animated animate__fadeInDown animate__delay-1s">
+            <div className="shadow m-2 p-2">
               <img className="w-100" src={project03} alt="project03" />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>

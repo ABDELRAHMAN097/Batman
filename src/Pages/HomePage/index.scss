@@ -40,7 +40,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 10px;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -57,7 +57,7 @@
   width: 100%;
     
 }  
-h1 , p , .mov{
+h1 , p {
   color: var(--blueColor);
 }
   h1 , p{
@@ -68,6 +68,10 @@ h1 , p , .mov{
   span{
       color: #fff;
   }
+.mov{
+ 
+  font-size: 20px;
+}
   .social{
   display: flex;
   flex-direction: row;
@@ -124,3 +128,7 @@ position: relative;
   border: 1px dotted rgb(255, 255, 255);
 }
 
+.shadow{
+  border-radius: 8px;
+  box-shadow: 2px 1px 10px rgb(43 87 133 / 46%) !important;
+}

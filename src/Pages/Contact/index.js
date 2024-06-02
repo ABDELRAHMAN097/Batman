@@ -5,7 +5,7 @@ import { WOW } from "wowjs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faAnglesDown ,  faLocationDot , faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook , faGithub , faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook , faGithub , faLinkedin, faTwitter , faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
 
@@ -22,7 +22,28 @@ export default function Index() {
   //   Facebook
   const handelface = () => {
     window.open(
-      `https://www.facebook.com/profile.php?id=61554441730`,
+      `https://www.facebook.com/profile.php?id=61554441730373`,
+      "_blank"
+    );
+  };
+  //   Twitter
+  const handelTwitter = () => {
+    window.open(
+      `https://x.com/bodymagdy097`,
+      "_blank"
+    );
+  };
+  //   linkedin
+  const handellinkedin = () => {
+    window.open(
+      `https://www.linkedin.com/in/abdelrahman-magdy-4944a3242/`,
+      "_blank"
+    );
+  };
+   //   github
+   const handelgithub = () => {
+    window.open(
+      `https://github.com/ABDELRAHMAN097`,
       "_blank"
     );
   };
@@ -64,13 +85,16 @@ export default function Index() {
         <div className="social py-5">
         <div className="social fs-1 text-end wow animate__animated animate__fadeInUp">
               <div className="border-icon">
-                <FontAwesomeIcon className="icon" icon={faGithub} />
+                <FontAwesomeIcon className="icon" onClick={handelgithub} icon={faGithub} />
               </div>
               <div className="border-icon" onClick={handleWhatsAppClick}>
                 <FontAwesomeIcon className="icon" icon={faWhatsapp} />
               </div>
               <div className="border-icon">
-                <FontAwesomeIcon className="icon" icon={faTwitter} />
+                <FontAwesomeIcon className="icon" onClick={handelTwitter} icon={faTwitter} />
+              </div>
+              <div className="border-icon">
+                <FontAwesomeIcon className="icon" onClick={handellinkedin} icon={faLinkedin} />
               </div>
               <div className="border-icon" onClick={handelface}>
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
