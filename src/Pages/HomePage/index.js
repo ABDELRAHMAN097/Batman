@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
+import { WOW } from "wowjs";
 import "animate.css";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,6 +14,10 @@ import { MdPhonelink } from "react-icons/md";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GoCodescan } from "react-icons/go";
 export default function HomePage() {
+  useEffect(() => {
+    const wow = new WOW({ live: false });
+    wow.init();
+  }, []);
   // what`sApp
   const handleWhatsAppClick = () => {
     const phoneNumber = "+201023671214";
@@ -85,7 +90,7 @@ export default function HomePage() {
       <div className="sercices ">
         <h2 className="py-5 text-center">sercices</h2>
         <div className="row w-100  px-3 align-items-baseline">
-          <div className="col-lg-4 col-md-6 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
             <div className="border rounded m-2 p-2">
               <span className="fs-1">
                 <LuSquareDashedBottomCode />
@@ -97,7 +102,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInUp animate__delay-1s">
           <div className="border rounded m-2 p-2">
             <span className="fs-1">
               <MdPhonelink />
@@ -109,7 +114,7 @@ export default function HomePage() {
             </p>
           </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 ">
+          <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInRight animate__delay-1s">
           <div className="border rounded m-2 p-2">
             <span className="fs-1">
               <GoCodescan />
@@ -118,7 +123,7 @@ export default function HomePage() {
             <p className="text-white-50 py-2">100% Pixel perfect design is my goal.</p>
           </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 ">
+          <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInRight animate__delay-1s">
           <div className="border rounded m-2 p-2">
 
             <span className="fs-1">
@@ -138,7 +143,7 @@ export default function HomePage() {
       <div className="Projects">
         <h2 className="py-5 text-center">Projects</h2>
         <div className="row px-3 w-100 align-items-baseline">
-          <div className=" col-lg-4 col-md-6 col-sm-12 ">
+          <div className=" col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
             <div className="border rounded m-2">
               <img className="w-100" src={project1} alt="projectPhoto" />
               <div className="p-2 text-start">
@@ -149,7 +154,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12 text-center">
+          <div className=" col-lg-4 col-md-6 col-sm-12 text-center wow animate__animated animate__fadeInUp animate__delay-1s">
             <div className="border rounded m-2">
               <img className="w-100" src={project02} alt="project02" />
               <div className="p-2 text-start">
@@ -161,7 +166,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className=" col-lg-4 col-md-6 col-sm-12 text-center">
-            <div className="border rounded ">
+            <div className="border rounded wow animate__animated animate__fadeInDown animate__delay-1s">
               <img className="w-100" src={project03} alt="project03" />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
