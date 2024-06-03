@@ -10,28 +10,31 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   const [showNav, setShowNav] = useState(false);
+  const handleLinkClick = () => {
+    setShowNav(false);
+  };
   return (
-    <div className="col-12" id="nav">
+    <div className="col-12 zindex" id="nav">
       <div className="mylogo">
         <img src={photo} alt="logo"/>
       </div>
 
-      <ul className={showNav ? "show-nav nav__active " : "nav-links"}>
-        <li className="hover-grow underline-animation">
-          <Link to={"/"}>Home</Link>
+      <ul className={showNav ? "show-nav nav__active zindex" : "nav-links zindex"}>
+        <li className="hover-grow underline-animation zindex">
+          <Link to={"/"} onClick={handleLinkClick}>Home</Link>
         </li>
         
-        <li className="hover-grow underline-animation">
-          <Link to={"About"}>About Me</Link>
+        <li className="hover-grow underline-animation zindex">
+          <Link to={"About"} onClick={handleLinkClick}>About Me</Link>
         </li>
 
-        <li className="hover-grow underline-animation">
-          <Link to={"Contact"}>Contact</Link>
+        <li className="hover-grow underline-animation zindex">
+          <Link to={"Contact"} onClick={handleLinkClick}>Contact</Link>
         </li>
 
       </ul>
-      <div onClick={() => setShowNav(!showNav)} className="nav__toggler">
-        <FontAwesomeIcon icon={faBars} />
+      <div onClick={() => setShowNav(!showNav)} className="nav__toggler zindex">
+        <FontAwesomeIcon className="zindex" icon={faBars} />
       </div>
     </div>
   );
