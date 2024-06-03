@@ -50,7 +50,7 @@ export default function About() {
             </div>
         </div>
         
-        <div className='skills col-12 my-5 py-5 wow animate__animated animate__fadeInDown animate__delay-1s'>
+        <div className='skills zindex col-12 my-5 py-5 wow animate__animated animate__fadeInLeft animate__delay-2s'>
           <h2>Professional skills</h2>
           <div className='items'>
             <div className='item'>
@@ -85,7 +85,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className='skills col-12 pt-5 mb-4 wow animate__animated animate__fadeInUp animate__delay-1s'>
+        <div className='skills col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-1s'>
           <h2>Tools I Use</h2>
           <div className='items'>
             <div className='item'>
