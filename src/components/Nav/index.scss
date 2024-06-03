@@ -1,7 +1,7 @@
 #nav{
-    padding: 20px;
+    padding: 20px 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 8;
@@ -16,7 +16,7 @@ a{
 ul{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 li{
@@ -37,7 +37,7 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .nav__toggler {

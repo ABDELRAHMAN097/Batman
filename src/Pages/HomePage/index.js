@@ -108,11 +108,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className="intro-img animate__animated  animate__fadeInRight">
-          <img className="photo col-12" src={photo} alt="" />
+          <img className="photo col-12 text-end" src={photo} alt="" />
         </div>
       </div>
 
-      <div className="sercices">
+      <div className="sercices zindex">
         <h2 className="py-5 text-center">sercices</h2>
         <div className="row w-100  px-3 align-items-baseline">
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
@@ -165,7 +165,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="Projects">
+      <div className="Projects zindex">
         <h2 className="py-5 text-center">Projects</h2>
         <div className="row px-3 w-100 align-items-baseline">
           <div className=" col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
