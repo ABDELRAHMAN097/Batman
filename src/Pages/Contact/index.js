@@ -106,7 +106,7 @@ export default function Index() {
               </div>
               </div>
               <div className="text-start vertical-text d-flex align-items-center wow animate__animated animate__fadeInUp animate__delay-1s">   
-              <h3 className="color-changing-text">Scrole Downe <FontAwesomeIcon className="icon" icon={faAnglesDown} /> </h3>
+              <h3 className="color-changing-text">Scrole Downe <FontAwesomeIcon className="icon color-changing-text" icon={faAnglesDown} /> </h3>
             </div>
             </div>
           
