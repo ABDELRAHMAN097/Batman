@@ -118,9 +118,21 @@ body {
 
 @keyframes colorChange {
   0% { color: red; }
-  20% { color: orange; }
+  20% { color: transparent; }
   40% { color: yellow; }
   60% { color: red; }
   80% { color: blue; }
   100% { color: purple; }
+}
+#Particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+.zindex{
+  position: relative;
+  z-index: 2;
 }

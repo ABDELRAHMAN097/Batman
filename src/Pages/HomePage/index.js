@@ -13,6 +13,7 @@ import { LuSquareDashedBottomCode } from "react-icons/lu";
 import { MdPhonelink } from "react-icons/md";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GoCodescan } from "react-icons/go";
+import ParticlesComponent from "../../components/ParticlesComponent/ParticlesComponent";
 export default function HomePage() {
   useEffect(() => {
     const wow = new WOW({ live: false });
@@ -69,35 +70,35 @@ export default function HomePage() {
 
 
   return (
-    <div className="col-12  w-100">
+    <div className="col-12  w-100 zindex">
       <div className="hero">
-        
+      <ParticlesComponent id="tsparticles" />
         <div className="intro text-container animate__animated animate__fadeInLeft">
           <div className="ml">
             <h1 className="animate__animated animate__fadeInDown animate__delay-1s">
               I Am <span>Abdelrahman</span> Magdy
             </h1>
             <ReactTyped
-            className="mov"
+            className="fs-3"
               strings={["Front-End <span>Developer</span>"]}
-              typeSpeed={50}
-              backSpeed={50}
+              typeSpeed={30}
+              backSpeed={150}
               loop
             />
             <div className="social">
-              <div className="border-icon">
+              <div className="border-icon icon">
                 <FontAwesomeIcon className="icon" onClick={handelgithub} icon={faGithub} />
               </div>
-              <div className="border-icon" onClick={handleWhatsAppClick}>
+              <div className="border-icon icon" onClick={handleWhatsAppClick}>
                 <FontAwesomeIcon className="icon" icon={faWhatsapp} />
               </div>
-              <div className="border-icon">
+              <div className="border-icon icon">
                 <FontAwesomeIcon className="icon" onClick={handelTwitter} icon={faTwitter} />
               </div>
-              <div className="border-icon">
+              <div className="border-icon icon">
                 <FontAwesomeIcon className="icon" onClick={handellinkedin} icon={faLinkedin} />
               </div>
-              <div className="border-icon" onClick={handelface}>
+              <div className="border-icon icon" onClick={handelface}>
                 <FontAwesomeIcon className="icon" icon={faFacebook} />
               </div>
             </div>
@@ -111,7 +112,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="sercices ">
+      <div className="sercices">
         <h2 className="py-5 text-center">sercices</h2>
         <div className="row w-100  px-3 align-items-baseline">
           <div className="col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">

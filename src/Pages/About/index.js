@@ -14,6 +14,7 @@ import githup from '../../assets/githup.png'
 import sass from '../../assets/sass.png'
 import redux from '../../assets/redux.png'
 import vscode from '../../assets/vscode.png'
+import ParticlesComponent from "../../components/ParticlesComponent/ParticlesComponent";
 
 export default function About() {
   useEffect(() => {
@@ -22,11 +23,11 @@ export default function About() {
   }, []);
   return (
 <div>
-        <div className='about col-12'>
+        <div className='about col-12 zindex py-5'>
             <div className='about-details col-8 wow animate__animated animate__fadeInLeft'>
-
+            <ParticlesComponent id="tsparticles" />
               <div className='infos'>
-              <h2>Know Who <span>I'M</span></h2>
+              <h2 className='py-2'>Know Who <span>I'M</span></h2>
                 <p>Hi Everyone, I am <span>Abdelrahman Magdy</span> from Egypt.</p>
                 <p>I am currently working freelance as a front-end developer.</p>
                 <p>I completed my Front End course with Eraa Soft.</p>
@@ -49,7 +50,7 @@ export default function About() {
             </div>
         </div>
         
-        <div className='skills col-12 wow animate__animated animate__fadeInDown animate__delay-1s'>
+        <div className='skills col-12 py-5 wow animate__animated animate__fadeInDown animate__delay-1s'>
           <h2>Professional skills</h2>
           <div className='items'>
             <div className='item'>
