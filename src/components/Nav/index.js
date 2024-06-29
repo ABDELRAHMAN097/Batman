@@ -19,7 +19,7 @@ export default function Nav() {
         <img src={photo} alt="logo"/>
       </div>
 
-      <ul className={showNav ? "show-nav nav__active zindex" : "nav-links zindex"}>
+      <ul className={showNav ? "show-nav nav__active zindex animate__animated animate__fadeInRight" : "nav-links zindex"}>
         <li className="hover-grow underline-animation zindex">
           <Link to={"/"} onClick={handleLinkClick}>Home</Link>
         </li>

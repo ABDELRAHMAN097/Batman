@@ -9,6 +9,7 @@ import { faFacebook , faGithub , faLinkedin, faTwitter , faWhatsapp } from "@for
 import photo from '../../assets/2.jpeg'
 import emailjs from "emailjs-com";
 import ParticlesComponent from "../../components/ParticlesComponent/ParticlesComponent";
+import { MdOutlineSendToMobile } from "react-icons/md";
 
 export default function Index() {
   useEffect(() => {
@@ -106,7 +107,7 @@ export default function Index() {
               </div>
               </div>
               <div className="text-start vertical-text d-flex align-items-center wow animate__animated animate__fadeInUp animate__delay-1s">   
-              <h3 className="color-changing-text">Scroll Down<FontAwesomeIcon className="icon color-changing-text" icon={faAnglesDown} /> </h3>
+              <h3 className="scroll color-changing-text">Scroll Down<FontAwesomeIcon className="scroll color-changing-text" icon={faAnglesDown} /> </h3>
             </div>
             </div>
           
@@ -151,7 +152,7 @@ export default function Index() {
                 id="name"
                 name="from_name"
                 required
-                placeholder="الاسم"
+                placeholder="Name"
               />
             </div>
             <div className="email">
@@ -160,7 +161,7 @@ export default function Index() {
                 id="email"
                 name="to_name"
                 required
-                placeholder="البريد الالكتروني"
+                placeholder="gmail "
               />
             </div>
           </div>
@@ -172,10 +173,10 @@ export default function Index() {
               // value={formData.message}
               // onChange={handleChange}
               required
-              placeholder="الرسالة:"
+              placeholder="message:"
             />
           </div>
-          <button type="submit">إرسال</button>
+          <button type="submit">إرسال <MdOutlineSendToMobile /> </button>
         </form>
       </div>
       <iframe
