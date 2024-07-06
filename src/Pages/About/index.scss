@@ -82,14 +82,58 @@ span {
     }
   }
 }
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 30px;
+.time-line{
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
 }
+.containerr{
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+.text-box{
+  padding: 20px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  img{
+    position: absolute;
+    width: 70px;
+    border-radius: 50%;
+    right: -85px;
+    top: 5px;
+    background-color: #fff;
+    padding: 5px;
+    z-index: 10;
+  }
+}
+.left-container{
+  left: 0;
+}
+.right-container{
+  left: 50%;
+}
+.right-container img{
+  position: absolute;
+  left: -85px;
+  top: 5px;
+  z-index: 10;
+}
+.time-line::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+}
+
+
 .items {
   display: flex;
   flex-direction: row;

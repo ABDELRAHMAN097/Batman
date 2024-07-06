@@ -50,44 +50,83 @@ export default function About() {
             </div>
         </div>
         
-        <div className='skills zindex col-12 my-5 py-5 wow animate__animated animate__fadeInLeft animate__delay-2s'>
-          <h2>Professional skills</h2>
-          <div className='items'>
-            <div className='item'>
-              <img src={html} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={css} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={jquery} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={js} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={bootstrap} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={tailwind} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={react} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={redux} alt=''/>
-            </div>
-            <div className='item'>
-              <img src={sass} alt=''/>
-            </div>
+        <div className='time-line'>
 
-
+          <div className='containerr left-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={html} alt='html'/>
+                <h3 className='text-info'>Html</h3>
+            </div>
           </div>
+
+          <div className='containerr right-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={css} alt='Css'/>
+                <h3 className='text-info'>Css</h3>
+            </div>
+          </div>
+
+          <div className='containerr left-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={js} alt='js'/>
+                <h3 className='text-info'>Javascript</h3>
+            </div>
+          </div>
+
+          <div className='containerr right-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={bootstrap} alt='bootstrap'/>
+                <h3 className='text-info'>Bootstrap</h3>
+            </div>
+          </div>
+
+          <div className='containerr left-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={jquery} alt='jquery'/>
+                <h3 className='text-info'>jquery</h3>
+            </div>
+          </div>
+
+          <div className='containerr right-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={tailwind} alt='tailwind'/>
+                <h3 className='text-info'>Tailwind</h3>
+            </div>
+          </div>
+
+          <div className='containerr left-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={git} alt='git'/>
+                <h3 className='text-info'>Git</h3>
+            </div>
+          </div>
+
+          <div className='containerr right-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={react} alt='react'/>
+                <h3 className='text-info'>React</h3>
+            </div>
+          </div>
+
+          <div className='containerr left-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={sass} alt='sass'/>
+                <h3 className='text-info'>Sass</h3>
+            </div>
+          </div>
+
+          <div className='containerr right-container'>
+            <div className='text-box'>
+                <img className='mb-3' src={redux} alt='redux'/>
+                <h3 className='text-info'>Redux</h3>
+            </div>
+          </div>
+         
         </div>
 
-        <div className='skills col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-1s'>
+        <div className='skills text-center col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-1s'>
           <h2>Tools I Use</h2>
-          <div className='items'>
+          <div className='items mt-3'>
             <div className='item'>
               <img src={vscode} alt=''/>
             </div>
