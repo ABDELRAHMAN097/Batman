@@ -92,6 +92,7 @@ span {
   position: relative;
   width: 50%;
 }
+
 .text-box{
   padding: 20px 30px;
   background-color: #7c7c7c28;
@@ -107,7 +108,7 @@ span {
     border-radius: 50%;
     right: -85px;
     top: 5px;
-    background-color: #7c7c7c28;
+    background-color: #f8f8f86e;
     border: 1px solid white;
     padding: 5px;
     z-index: 10;
@@ -135,7 +136,8 @@ span {
   left: 50%;
   margin-left: -3px;
   z-index: 1;
-  animation: moveLine 6s linear forwards;
+  box-shadow: 2px 7px 10px rgb(43 87 133 / 46%) !important;
+  animation: moveLine 12s linear forwards;
 }
 @keyframes moveLine {
   0%{

@@ -22,7 +22,7 @@ export default function About() {
     wow.init();
   }, []);
   return (
-<div>
+<div className='zindex '>
         <div className='about col-12 zindex py-5 mb-5'>
             <div className='about-details col-8 wow animate__animated animate__fadeInLeft'>
             <ParticlesComponent id="tsparticles" />
@@ -52,7 +52,7 @@ export default function About() {
         
         <div className='time-line'>
 
-          <div className='containerr left-container'>
+          <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={html} alt='html'/>
                 <h3 className='text-info'>Html</h3>
@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr right-container'>
+          <div className='containerr right-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={css} alt='Css'/>
                 <h3 className='text-info'>Css</h3>
@@ -68,7 +68,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr left-container'>
+          <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={js} alt='js'/>
                 <h3 className='text-info'>Javascript</h3>
@@ -76,7 +76,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr right-container'>
+          <div className='containerr right-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={bootstrap} alt='bootstrap'/>
                 <h3 className='text-info'>Bootstrap</h3>
@@ -84,7 +84,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr left-container'>
+          <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={jquery} alt='jquery'/>
                 <h3 className='text-info'>jquery</h3>
@@ -92,7 +92,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr right-container'>
+          <div className='containerr right-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={tailwind} alt='tailwind'/>
                 <h3 className='text-info'>Tailwind</h3>
@@ -100,7 +100,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr left-container'>
+          <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={git} alt='git'/>
                 <h3 className='text-info'>Git</h3>
@@ -108,7 +108,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr right-container'>
+          <div className='containerr right-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={react} alt='react'/>
                 <h3 className='text-info'>React</h3>
@@ -116,7 +116,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr left-container'>
+          <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={sass} alt='sass'/>
                 <h3 className='text-info'>Sass</h3>
@@ -124,7 +124,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className='containerr right-container'>
+          <div className='containerr right-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={redux} alt='redux'/>
                 <h3 className='text-info'>Redux</h3>
@@ -134,7 +134,7 @@ export default function About() {
          
         </div>
 
-        <div className='skills text-center col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-1s'>
+        <div className='skills text-center col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-0.1s'>
           <h2>Tools I Use</h2>
           <div className='items mt-3'>
             <div className='item'>
