@@ -94,17 +94,21 @@ span {
 }
 .text-box{
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: #7c7c7c28;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 2px 7px 10px rgb(43 87 133 / 46%) !important;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
+  margin-bottom: 50px;
   img{
     position: absolute;
     width: 70px;
     border-radius: 50%;
     right: -85px;
     top: 5px;
-    background-color: #fff;
+    background-color: #7c7c7c28;
+    border: 1px solid white;
     padding: 5px;
     z-index: 10;
   }
@@ -131,8 +135,40 @@ span {
   left: 50%;
   margin-left: -3px;
   z-index: 1;
+  animation: moveLine 6s linear forwards;
 }
-
+@keyframes moveLine {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+}
+.left-container-arrwo{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 18px;
+  left: 100%;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom : 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: 15px solid transparent;
+}
+.right-container-arrwo{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 18px;
+  right: 100%;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom : 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: 15px solid transparent;
+}
 
 .items {
   display: flex;

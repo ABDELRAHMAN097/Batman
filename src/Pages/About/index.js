@@ -56,6 +56,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={html} alt='html'/>
                 <h3 className='text-info'>Html</h3>
+                <span className='left-container-arrwo'></span>
             </div>
           </div>
 
@@ -63,6 +64,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={css} alt='Css'/>
                 <h3 className='text-info'>Css</h3>
+                <span className='right-container-arrwo'></span>
             </div>
           </div>
 
@@ -70,6 +72,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={js} alt='js'/>
                 <h3 className='text-info'>Javascript</h3>
+                <span className='left-container-arrwo'></span>
             </div>
           </div>
 
@@ -77,6 +80,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={bootstrap} alt='bootstrap'/>
                 <h3 className='text-info'>Bootstrap</h3>
+                <span className='right-container-arrwo'></span>
             </div>
           </div>
 
@@ -84,6 +88,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={jquery} alt='jquery'/>
                 <h3 className='text-info'>jquery</h3>
+                <span className='left-container-arrwo'></span>
             </div>
           </div>
 
@@ -91,6 +96,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={tailwind} alt='tailwind'/>
                 <h3 className='text-info'>Tailwind</h3>
+                <span className='right-container-arrwo'></span>
             </div>
           </div>
 
@@ -98,6 +104,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={git} alt='git'/>
                 <h3 className='text-info'>Git</h3>
+                <span className='left-container-arrwo'></span>
             </div>
           </div>
 
@@ -105,6 +112,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={react} alt='react'/>
                 <h3 className='text-info'>React</h3>
+                <span className='right-container-arrwo'></span>
             </div>
           </div>
 
@@ -112,6 +120,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={sass} alt='sass'/>
                 <h3 className='text-info'>Sass</h3>
+                <span className='left-container-arrwo'></span>
             </div>
           </div>
 
@@ -119,6 +128,7 @@ export default function About() {
             <div className='text-box'>
                 <img className='mb-3' src={redux} alt='redux'/>
                 <h3 className='text-info'>Redux</h3>
+                <span className='right-container-arrwo'></span>
             </div>
           </div>
          
