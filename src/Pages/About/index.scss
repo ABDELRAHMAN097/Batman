@@ -92,7 +92,17 @@ span {
   position: relative;
   width: 50%;
 }
-
+.mark-text{
+  font-size: 50px;
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  transform: rotate(-15deg);
+  font-weight: bolder;
+  color: #a0a0a08c;
+  letter-spacing: 6px;
+  
+}
 .text-box{
   padding: 20px 30px;
   background-color: #7c7c7c28;
