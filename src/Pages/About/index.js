@@ -50,8 +50,10 @@ export default function About() {
             </div>
         </div>
         
-        <div className='time-line'>
-          <h1 className='mt-5 mark-text'>Skils</h1>
+        <div>
+          <h1 className='text-center'>Skills</h1>
+          <div className='time-line'>
+          <h1 className='mt-5 mark-text'>Skills</h1>
           <div className='containerr left-container wow animate__animated animate__bounceInDown animate__delay-0.1s'>
             <div className='text-box'>
                 <img className='mb-3' src={html} alt='html'/>
@@ -132,6 +134,7 @@ export default function About() {
             </div>
           </div>
          
+        </div>
         </div>
 
         <div className='skills text-center col-12 pt-5 mb-4 zindex wow animate__animated animate__fadeInUp animate__delay-0.1s'>
