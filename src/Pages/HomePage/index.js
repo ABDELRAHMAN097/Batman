@@ -57,10 +57,10 @@ export default function HomePage() {
     );
   };
   const projectOne = () => {
-    window.open("https://dental74.netlify.app/", "_blank");
+    window.open("https://codebucks-00.netlify.app/", "_blank");
   };
   const projectTwo = () => {
-    window.open("https://abdelrahman097.github.io/burgerKing/", "_blank");
+    window.open("https://topmovies00.netlify.app/", "_blank");
   };
   const projectThre = () => {
     window.open("https://alhilal-hospital00.netlify.app/", "_blank");
