@@ -101,7 +101,9 @@ span {
   font-weight: bolder;
   color: #a0a0a08c;
   letter-spacing: 6px;
-  
+  @media screen and (max-width : 997px){
+    left: 50px;
+   }
 }
 .text-box{
   padding: 20px 30px;
