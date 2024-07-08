@@ -23,11 +23,15 @@ export default function Nav() {
         <li className="hover-grow underline-animation zindex">
           <Link to={"/"} onClick={handleLinkClick}>Home</Link>
         </li>
-        
+
         <li className="hover-grow underline-animation zindex">
           <Link to={"About"} onClick={handleLinkClick}>About Me</Link>
         </li>
 
+        <li className="hover-grow underline-animation zindex">
+          <Link to={"Services"}>Services</Link>
+        </li>
+        
         <li className="hover-grow underline-animation zindex">
           <Link to={"Contact"} onClick={handleLinkClick}>Contact</Link>
         </li>
