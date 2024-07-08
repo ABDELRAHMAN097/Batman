@@ -176,7 +176,7 @@ export default function Index() {
               placeholder="message:"
             />
           </div>
-          <button type="submit">إرسال <MdOutlineSendToMobile /> </button>
+          <button type="submit">Send<MdOutlineSendToMobile /> </button>
         </form>
       </div>
       <iframe
