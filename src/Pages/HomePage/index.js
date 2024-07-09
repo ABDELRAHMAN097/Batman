@@ -123,26 +123,32 @@ export default function HomePage() {
       <Services />
       {/* Start-Achivements */}
       <div className="w-100 Achivements container zindex">
-        <h2 className="text-center py-3">Achivements</h2>
-        <div className="shadow w-100 text-center row align-items-center p-3 mt-3">
-          <div className="col-lg-6 col-sm-12">
-          <div className="Achivement">
-          <img className="Achivement" src={diploma} alt="front-end diploma" />
-          </div>
-          </div>
-          <div className="col-lg-6 col-sm-12">
-            <h3 className="text-start">I obtained a Front End Diploma from Era Soft Company - 2024</h3>
-          </div>
-        </div>
+  <h2 className="text-center py-3">Achievements</h2>
+  <div className="shadow m-auto w-100 text-center row align-items-center p-3 mt-3">
+    <div className="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+      <div className="Achivement">
+        <img className="Achivement" src={diploma} alt="front-end diploma" />
       </div>
+    </div>
+    <div className="py-3 col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+      <h3>I obtained a Front End Diploma from Era Soft Company - 2024</h3>
+    </div>
+  </div>
+</div>
+
+
       {/* end-Achivements */}
       {/* start-Projects */}
-      <div className="Projects py-3 zindex">
+      <div className="Projects  m-auto py-3 zindex">
         <h2 className="py-5 text-center">Projects</h2>
         <div className="row px-3 w-100 align-items-baseline">
-          <div className=" col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__fadeInLeft animate__delay-1s">
+          <div className=" col-lg-4 col-md-6  col-sm-12  d-flex flex-column justify-content-center align-items-center  m-auto wow animate__animated animate__fadeInLeft animate__delay-1s">
             <div className="shadow m-2 p-2">
-              <img className="w-100 img-project" src={project1} alt="projectPhoto" />
+              <img
+                className="w-100 img-project"
+                src={project1}
+                alt="projectPhoto"
+              />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
                 <button className="m-3 btn" onClick={projectOne}>
@@ -151,9 +157,13 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12 text-center wow animate__animated animate__fadeInUp animate__delay-1s">
+          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center wow animate__animated animate__fadeInUp animate__delay-1s">
             <div className="shadow m-2 p-2">
-              <img className="w-100 img-project" src={project02} alt="project02" />
+              <img
+                className="w-100 img-project"
+                src={project02}
+                alt="project02"
+              />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
                 <button className="m-3 btn" onClick={projectTwo}>
@@ -162,9 +172,13 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12 text-center  wow animate__animated animate__fadeInDown animate__delay-1s">
+          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center  wow animate__animated animate__fadeInDown animate__delay-1s">
             <div className="shadow m-2 p-2">
-              <img className="w-100 img-project" src={project03} alt="project03" />
+              <img
+                className="w-100 img-project"
+                src={project03}
+                alt="project03"
+              />
               <div className="p-2 text-start">
                 <button className="btn">Github</button>
                 <button className="m-3 btn" onClick={projectThre}>
@@ -176,7 +190,6 @@ export default function HomePage() {
         </div>
       </div>
       {/* end-Projects */}
-
     </div>
   );
 }
