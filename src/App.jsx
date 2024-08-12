@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Notfound from './Pages/Notfound'
 import ParticlesComponent from './components/ParticlesComponent/ParticlesComponent'
 import Services from "./components/Services/Services";
+// import Footer from "./components/Footer/Footer";
 export default function App() {
   return (
     <div className="col-12">
@@ -23,7 +24,7 @@ export default function App() {
           <Route path="*" element={<Notfound/>} />
          </Route>
         </Routes>
-        
+       
         <Outlet />
       </BrowserRouter>
     </div>

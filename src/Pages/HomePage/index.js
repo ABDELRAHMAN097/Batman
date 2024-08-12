@@ -18,6 +18,7 @@ import project03 from "../../assets/project03.png";
 import diploma from "../../assets/Achivements.png";
 import ParticlesComponent from "../../components/ParticlesComponent/ParticlesComponent";
 import Services from "../../components/Services/Services";
+import { Link } from "react-router-dom";
 export default function HomePage() {
   useEffect(() => {
     const wow = new WOW({ live: false });
@@ -56,16 +57,6 @@ export default function HomePage() {
       "_blank"
     );
   };
-  const projectOne = () => {
-    window.open("https://codebucks-00.netlify.app/", "_blank");
-  };
-  const projectTwo = () => {
-    window.open("https://topmovies00.netlify.app/", "_blank");
-  };
-  const projectThre = () => {
-    window.open("https://alhilal-hospital00.netlify.app/", "_blank");
-  };
-
   return (
     <div className="col-12  w-100 zindex">
       <div className="hero">
@@ -142,48 +133,61 @@ export default function HomePage() {
       <div className="Projects  m-auto py-3 zindex">
         <h2 className="py-5 text-center">Projects</h2>
         <div className="row px-3 w-100 align-items-baseline">
-          <div className=" col-lg-4 col-md-6  col-sm-12  d-flex flex-column justify-content-center align-items-center  m-auto wow animate__animated animate__fadeInLeft animate__delay-1s">
+          <div className=" col-lg-4 col-md-6  col-sm-12  d-flex flex-column justify-content-center align-items-center  m-auto wow animate__animated animate__fadeInLeft">
             <div className="shadow m-2 p-2">
               <img
                 className="w-100 img-project"
                 src={project1}
                 alt="projectPhoto"
               />
-              <div className="p-2 text-start">
+              <div className="py-3 text-start">
+                <p className="py-2">E-commerce</p>
+                <Link to={"https://github.com/ABDELRAHMAN097/book-store"}>
                 <button className="btn">Github</button>
-                <button className="m-3 btn" onClick={projectOne}>
-                  Live Demo
-                </button>
+                </Link>
+                <Link className="mx-2" to={"https://lucid-book-store.netlify.app/"}>
+                <button className="btn">Live Demo</button>
+                </Link>
+                  
+             
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center wow animate__animated animate__fadeInUp animate__delay-1s">
+          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center wow animate__animated animate__fadeInUp ">
             <div className="shadow m-2 p-2">
               <img
                 className="w-100 img-project"
                 src={project02}
                 alt="project02"
               />
-              <div className="p-2 text-start">
+              <div className="py-3 text-start">
+              <p className="py-2">Movies website</p>
+                <Link to={"https://github.com/ABDELRAHMAN097/top-movies"}>
                 <button className="btn">Github</button>
-                <button className="m-3 btn" onClick={projectTwo}>
-                  Live Demo
-                </button>
+                </Link>
+                <Link className="mx-2" to={"https://topmovies00.netlify.app/"}>
+                <button className="btn">Live Demo</button>
+                </Link>
+                  
+                
               </div>
             </div>
           </div>
-          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center  wow animate__animated animate__fadeInDown animate__delay-1s">
+          <div className=" col-lg-4 col-md-6 col-sm-12  m-auto text-center  wow animate__animated animate__fadeInDown ">
             <div className="shadow m-2 p-2">
               <img
                 className="w-100 img-project"
                 src={project03}
                 alt="project03"
               />
-              <div className="p-2 text-start">
+              <div className="py-3 text-start">
+              <p className="py-2">Dental clinic</p>
+                <Link to={"https://github.com/ABDELRAHMAN097/Al-Rowad-Dental-Center"}>
                 <button className="btn">Github</button>
-                <button className="m-3 btn" onClick={projectThre}>
-                  Live Demo
-                </button>
+                </Link>
+                <Link className="mx-2" to={"https://al-rowad-dental-center.vercel.app/"}>
+                <button className="btn">Live Demo</button>
+                </Link>
               </div>
             </div>
           </div>
