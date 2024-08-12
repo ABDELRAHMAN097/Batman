@@ -53,7 +53,7 @@ export default function HomePage() {
   };
   const handelCv = () => {
     window.open(
-      `https://drive.google.com/drive/folders/1_6vNPk5AKrELiTPd07bKqmUvIEBCtpZU?usp=drive_link`,
+      `https://drive.google.com/file/d/1XuP5CDblKNX4bBUYDoRnrEB3-tHZP9M7/view?usp=sharing`,
       "_blank"
     );
   };
