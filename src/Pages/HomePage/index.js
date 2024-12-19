@@ -4,13 +4,7 @@ import { WOW } from "wowjs";
 import "animate.css";
 import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGithub, faLinkedin, faTwitter, faWhatsapp, } from "@fortawesome/free-brands-svg-icons";
 import photo from "../../assets/banner.png";
 import project1 from "../../assets/project01.png";
 import project02 from "../../assets/project02.png";
@@ -53,7 +47,7 @@ export default function HomePage() {
   };
   const handelCv = () => {
     window.open(
-      `https://drive.google.com/file/d/1XuP5CDblKNX4bBUYDoRnrEB3-tHZP9M7/view?usp=sharing`,
+      `https://drive.google.com/file/d/1ewTlQTbVbImr5e5JplFojBndtlH1eHUC/view?usp=sharing`,
       "_blank"
     );
   };

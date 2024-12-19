@@ -22,7 +22,7 @@ export default function About() {
     wow.init();
   }, []);
   return (
-<div className='zindex '>
+<div className='zindex ' id='About'>
         <div className='about col-12 zindex py-5 mb-5'>
             <div className='about-details col-8 wow animate__animated animate__fadeInLeft'>
             <ParticlesComponent id="tsparticles" />

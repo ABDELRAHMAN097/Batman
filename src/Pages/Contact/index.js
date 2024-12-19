@@ -71,7 +71,7 @@ export default function Index() {
   };
 
   return (
-    <div className="contact zindex">
+    <div className="contact zindex" id="Contact">
       <div className="intro-services py-5 text-center zindex">
       <ParticlesComponent id="tsparticles" />
         <h1 className="py-3 wow animate__animated animate__fadeInUp">CONTACT</h1>
